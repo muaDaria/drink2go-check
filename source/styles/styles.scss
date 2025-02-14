@@ -3,5 +3,39 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
+// миксины//
+@import "./mixins.scss";
+
 /* BLOCKS */
+@import "./blocks/page.scss";
+
+//блоки хедера
 @import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/nav.scss";
+
+//main блок
+//@import "./blocks/main-container.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/button.scss";
+@import "./blocks/control.scss";
+@import "./blocks/badge.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/product.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/maps.scss";
+@import "./blocks/filter.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/price.scss";
+@import "./blocks/range.scss";
+@import "./blocks/sorting.scss";
+@import "./blocks/title.scss";
+@import "./blocks/visually-hidden.scss";
+
+//блоки футера
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/contacts.scss";

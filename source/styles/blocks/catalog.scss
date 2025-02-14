@@ -1,0 +1,14 @@
+.catalog__wrapper {
+  @include wrapper__size;
+  background-color: $color-background-light;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,58 @@
+.logo {
+  align-items: center;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+.logo__image {
+  width: 32px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.logo__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 126px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: $color-base-black;
+  }
+}
+
+.logo__image:hover,
+.logo__image:focus {
+  opacity: 0.8;
+}
+
+.logo__image:active {
+  opacity: 0.6;
+}
+
+.logo__text:hover,
+.logo__text:focus {
+  color: $color-hover;
+}
+
+.logo__text:active {
+  color: $color-active;
+}
