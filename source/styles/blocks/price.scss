@@ -1,0 +1,20 @@
+.price {
+  padding: 0 25px 60px;
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+}
+
+.price__old {
+  font-size: 16px;
+  line-height: 32px;
+  color: $color-primary;
+  margin-right: 7px;
+}
+
+.price__new {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-right: 20px;
+}
