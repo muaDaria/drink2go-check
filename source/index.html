@@ -39,16 +39,16 @@
           <ul class="nav__user">
             <li class="nav__item">
               <a class="nav__link" href="#">
-                <svg class="nav__icon-account" width="16" height="16" fill="#333333">
-                  <use xlink:href="icons/stack.svg#account"></use>
+                <svg class="nav__icon-account" width="16" height="16" fill="#333333" role="img">
+                  <use href="icons/stack.svg#account"></use>
                 </svg>
                 <span class="nav__icon-text">Войти</span>
               </a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">
-                <svg class="nav__icon-basket" width="16" height="16" fill="#333333">
-                  <use xlink:href="icons/stack.svg#basket"></use>
+                <svg class="nav__icon-basket" width="16" height="16" fill="#333333" role="img">
+                  <use href="icons/stack.svg#basket"></use>
                 </svg>
                 <span class="nav__icon-text">Корзина</span>
               </a>
@@ -57,8 +57,8 @@
         </nav>
         <button class="header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg class="header__icon-toggle" width="16" height="12" fill="#333333">
-            <use xlink:href="icons/stack.svg#toggle-opened"></use>
+          <svg class="header__icon-toggle" width="16" height="12" fill="#333333" role="img">
+            <use href="icons/stack.svg#toggle-opened"></use>
           </svg>
         </button>
       </div>
@@ -75,19 +75,19 @@
               <a class="price__button button" href="form.html">Заказать</a>
             </div>
             <button class="slider__button slider__next button" type="button">
-              <span class="visually-hidden"> Предыдущий товар</span>
+              <span class="visually-hidden">Предыдущий товар</span>
             </button>
             <button class="slider__button slider__prev button" type="button">
-              <span class="visually-hidden"> Следующий товар</span>
+              <span class="visually-hidden">Следующий товар</span>
             </button>
             <div class="slider__image-wrapper">
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo/promo-desktop.webp 1x, img/promo/promo-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/promo/promo-tablet.webp 1x, img/promo/promo-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/promo/promo-mobile.webp 1x, img/promo/promo-mobile@2x.webp 2x">
-                <source media="(min-width: 1300px)" srcset="img/promo/promo-desktop.png 1x, img/promo/promo-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/promo/promo-tablet.png 1x, img/promo/promo-tablet@2x.png 2x">
-                <img class="slider__image" src="img/promo/promo-mobile.png" width="280" height="270" type="image/png" srcset="img/promo/promo-mobile@2x.png 2x" alt="Орнажевая упаковка питания для котов серии Cat Energy Pro со вкусом курицы">
+                <source type="image/webp" media="(min-width: 1440px)"  type="image/png" width="600" height="600" srcset=" images/promo-desktop@1x.webp 1x,  images/promo-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"  type="image/png" width="476" height="476" srcset=" images/promo-tablet@1x.webp 1x,  images/promo-tablet@2x.webp 2x">
+                <source type="image/webp"  type="image/png" width="280" height="280" srcset="images/promo-mobile@1x.webp 1x,  images/promo-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" type="image/png" width="600" height="600" srcset="images/promo-desktop@1x.png 1x, images/promo-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" type="image/png" width="476" height="476" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x">
+                <img class="slider__image" src="images/promo-mobile@1x.png" width="280" height="280" type="image/png" srcset="img/promo/promo-mobile@2x.png 2x" alt="Орнажевая упаковка питания для котов серии Cat Energy Pro со вкусом курицы">
               </picture>
             </div>
             <ol class="slider__pagination">
@@ -244,11 +244,11 @@
 
           <div class="catalog__sorting sorting">
             <span class="sorting__label">Сортировка:</span>
-            <select class="sorting__control">
-              <option selected value="popular">по умолчанию</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
-              <option value="popular">Сначала популярные</option>
+            <select class="sorting__control" name="sorting">
+              <option value="popular">по умолчанию</option>
+              <option value="cheap">cначала дешёвое</option>
+              <option value="expensive">cначала дорогое</option>
+              <option value="popular">cначала популярные</option>
             </select>
           </div>
 
@@ -262,52 +262,12 @@
                     <source type="image/webp" srcset="img/product/card-mobile1.webp 1x, img/product/card-mobile1@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/product/card-desktop1.png 1x, img/product/card-desktop1@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/product/card-tablet1.png 1x, img/product/card-tablet1@2x.png 2x">
-                    <img class="product__image" src="img/product/card-mobile1.png" width="140" height="107" srcset="img/product/card-mobile1@2x.png 2x" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
+                    <img class="product__image" src="img/product/card-mobile1.png" type="image/png" width="140" height="107" srcset="img/product/card-mobile1@2x.png 2x" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
                   </picture>
                 </div>
                 <div class="product__content">
                   <h3 class="product__title">Декаф Флэт Уайт</h3>
-                  <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком </p>
-                  <div class="product__price">
-                    <span class="product__value">225₽</span>
-                    <a class="product__button button" href="#">В корзину</a>
-                  </div>
-                </div>
-              </li>
-              <li class="product__card">
-                <div class="product__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/product/card-desktop1.webp 1x, img/product/card-desktop1@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/product/card-tablet1.webp 1x, img/product/card-tablet1@2x.webp 2x">
-                    <source type="image/webp" srcset="img/product/card-mobile1.webp 1x, img/product/card-mobile1@2x.webp 2x">
-                    <source media="(min-width: 1300px)" srcset="img/product/card-desktop1.png 1x, img/product/card-desktop1@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/product/card-tablet1.png 1x, img/product/card-tablet1@2x.png 2x">
-                    <img class="product__image" src="img/product/card-mobile1.png" width="140" height="107" srcset="img/product/card-mobile1@2x.png 2x" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
-                  </picture>
-                </div>
-                <div class="product__content">
-                  <h3 class="product__title">Декаф Флэт Уайт</h3>
-                  <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком </p>
-                  <div class="product__price">
-                    <span class="product__value">225₽</span>
-                    <a class="product__button button" href="#">В корзину</a>
-                  </div>
-                </div>
-              </li>
-              <li class="product__card">
-                <div class="product__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/product/card-desktop1.webp 1x, img/product/card-desktop1@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/product/card-tablet1.webp 1x, img/product/card-tablet1@2x.webp 2x">
-                    <source type="image/webp" srcset="img/product/card-mobile1.webp 1x, img/product/card-mobile1@2x.webp 2x">
-                    <source media="(min-width: 1300px)" srcset="img/product/card-desktop1.png 1x, img/product/card-desktop1@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/product/card-tablet1.png 1x, img/product/card-tablet1@2x.png 2x">
-                    <img class="product__image" src="img/product/card-mobile1.png" width="140" height="107" srcset="img/product/card-mobile1@2x.png 2x" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
-                  </picture>
-                </div>
-                <div class="product__content">
-                  <h3 class="product__title">Декаф Флэт Уайт</h3>
-                  <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком </p>
+                  <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   <div class="product__price">
                     <span class="product__value">225₽</span>
                     <a class="product__button button" href="#">В корзину</a>
@@ -361,6 +321,46 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/product/card-tablet1.webp 1x, img/product/card-tablet1@2x.webp 2x">
                     <source type="image/webp" srcset="img/product/card-mobile1.webp 1x, img/product/card-mobile1@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/product/card-desktop1.png 1x, img/product/card-desktop1@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/product/card-tablet1.png 1x, img/product/card-tablet1@2x.png 2x">
+                    <img class="product__image" src="img/product/card-mobile1.png" width="140" height="107" srcset="img/product/card-mobile1@2x.png 2x" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
+                  </picture>
+                </div>
+                <div class="product__content">
+                  <h3 class="product__title">Декаф Флэт Уайт</h3>
+                  <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком </p>
+                  <div class="product__price">
+                    <span class="product__value">225₽</span>
+                    <a class="product__button button" href="#">В корзину</a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__card">
+                <div class="product__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/product/card-desktop1.webp 1x, img/product/card-desktop1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/product/card-tablet1.webp 1x, img/product/card-tablet1@2x.webp 2x">
+                    <source type="image/webp" srcset="img/product/card-mobile1.webp 1x, img/product/card-mobile1@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/product/card-desktop1.png 1x, img/product/card-desktop1@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/product/card-tablet1.png 1x, img/product/card-tablet1@2x.png 2x">
+                    <img class="product__image" src="img/product/card-mobile1.png" width="140" height="107" srcset="img/product/card-mobile1@2x.png 2x" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
+                  </picture>
+                </div>
+                <div class="product__content">
+                  <h3 class="product__title">Декаф Флэт Уайт</h3>
+                  <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <div class="product__price">
+                    <span class="product__value">225₽</span>
+                    <a class="product__button button" href="#">В корзину</a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__card">
+                <div class="product__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/product/card-desktop1.webp 1x, img/product/card-desktop1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/product/card-tablet1.webp 1x, img/product/card-tablet1@2x.webp 2x">
+                    <source type="image/webp" srcset="img/product/card-mobile1.webp 1x, img/product/card-mobile1@2x.webp 2x">
+                    <source media="(min-width: 1400px)" srcset="img/product/card-desktop1.png 1x, img/product/card-desktop1@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/product/card-tablet1.png 1x, img/product/card-tablet1@2x.png 2x">
                     <img class="product__image" src="img/product/card-mobile1.png" width="140" height="107" srcset="img/product/card-mobile1@2x.png 2x" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
                   </picture>
@@ -404,15 +404,20 @@
       </section>
 
       <section class="maps" data-test="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" width="1440" height="540" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" width="768" height="480" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+          <source type="image/webp" width="320" height="420" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="1440" height="540" type="image/jpeg" srcset="image/map-desktop@1x.jpg 1x, images/map-desctop@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="768" height="480" type="image/jpeg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <img class="maps__image" src="images/map-mobile@1x.jpg" width="320" height="420" type="image/jpeg" srcset="images/map-mobile@2x.jpg 2x" alt="Drink2Go на карте.">
+        </picture>
         <div class="maps__wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/maps-desktop.webp 1x, img/maps-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/maps-tablet.webp 1x, img/maps-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/maps-mobile.webp 1x, img/maps-mobile@2x.webp 2x">
-              <source media ="(min-width: 1300px)" srcset="img/maps-desktop.jpg 1x, img/maps-desctop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/maps-tablet.jpg 1x, img/maps-tablet@2x.jpg 2x">
-              <img class="maps__image" src="img/maps-mobile.jpg" width="320" height="362" srcset="img/maps-mobile@2x.jpg 2x" alt="Cat Energy на карте.">
-            </picture>
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="maps__icon" width="38" height="50" role="img">
+            <use href="icons/stack.svg#map"></use>
+          </svg>
         </div>
       </section>
     </main>
