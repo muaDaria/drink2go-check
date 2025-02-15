@@ -63,10 +63,9 @@
         </button>
       </div>
     </header>
-    <main class="main-container">
-      <section class="promo promo--light" data-test="hero">
-        <div class="promo__wrapper">
-          <div class="promo__slider slider">
+    <main>
+      <section class="promo" data-test="hero">
+          <div class="promo__wrapper slider">
             <p class="slider__badge badge">Новинка!</p>
             <h1 class="slider__title title">Декаф Флэт Уайт</h1>
             <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
@@ -75,14 +74,12 @@
               <b class="price__new">225 ₽</b>
               <a class="price__button button" href="form.html">Заказать</a>
             </div>
-            <div class="slider__controls">
-              <button class="slider__button slider__next button" type="button">
-                <span class="visually-hidden"> Предыдущий товар</span>
-              </button>
-              <button class="slider__button slider__prev button" type="button">
-                <span class="visually-hidden"> Следующий товар</span>
-              </button>
-            </div>
+            <button class="slider__button slider__next button" type="button">
+              <span class="visually-hidden"> Предыдущий товар</span>
+            </button>
+            <button class="slider__button slider__prev button" type="button">
+              <span class="visually-hidden"> Следующий товар</span>
+            </button>
             <div class="slider__image-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo/promo-desktop.webp 1x, img/promo/promo-desktop@2x.webp 2x">
@@ -110,30 +107,29 @@
                 </button>
               </li>
             </ol>
-          </div>
         </div>
       </section>
 
       <section class="advantages" data-test="features">
         <div class="advantages__wrapper">
           <p class="advantages__badge badge">Преимущества</p>
-          <h2 class="advantages__title title">Главные причины выбрать Drink2Go</h2>
+          <h2 class="title advantages__title">Главные причины выбрать Drink2Go</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--speed">
-              <b class="advantages__heading">Скорость</b>
+              <h3 class="advantages__heading title">Скорость</h3>
               <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
             </li>
             <li class="advantages__item advantages__item--fit">
-              <b class="advantages__heading">Удобство</b>
-              <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку</p>
+              <h3 class="advantages__heading title">Удобство</h3>
+              <p class="advantages__description">Легко помещается и в карман,<br> и в маленькую сумочку</p>
             </li>
             <li class="advantages__item advantages__item--energy">
-              <b class="advantages__heading">Бодрость</b>
+              <h3 class="advantages__heading title">Бодрость</h3>
               <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
             </li>
             <li class="advantages__item advantages__item--eco">
-              <b class="advantages__heading">Экологичность</b>
-              <p class="advantages__description">Вся упаковка сделана  из перерабатываемых материалов</p>
+              <h3 class="advantages__heading title">Экологичность</h3>
+              <p class="advantages__description">Вся упаковка сделана <br> из перерабатываемых материалов</p>
             </li>
           </ul>
         </div>
@@ -421,26 +417,26 @@
       </section>
     </main>
 
-      <footer class="main-footer" data-test="footer">
-        <div class="main-footer__wrapper">
-          <h2 class="visually-hidden">Контакты</h2>
-          <div class="main-footer__contcacts">
-            <a class="main-footer__logo" href="index.html">
-              <span class="visually-hidden">Drink2Go</span>
-              <svg width="128" height="24" fill="#111111">
-                <use xlink:href="img/sprite.svg#footer-logo"></use>
-              </svg>
-            </a>
-            <div class="main-footer__social social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link social__link--vkontakte" href="#">
-                    <span class="visually-hidden"> Мы в Вконтакте</span>
-                    <svg width="28" height="22" fill="#666666">
-                      <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
-                    </svg>
-                  </a>
-                </li>
+    <footer class="main-footer" data-test="footer">
+      <div class="main-footer__wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="main-footer__contcacts">
+          <a class="main-footer__logo" href="index.html">
+            <span class="visually-hidden">Drink2Go</span>
+            <svg width="128" height="24" fill="#111111">
+              <use xlink:href="img/sprite.svg#footer-logo"></use>
+            </svg>
+          </a>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden"> Мы в Вконтакте</span>
+                  <svg width="28" height="22" fill="#666666">
+                    <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                  </svg>
+                 </a>
+              </li>
                 <li class="social__item">
                   <a class="social__link social__link--pinterest" href="#">
                     <span class="visually-hidden"> Мы на Пинтерест</span>

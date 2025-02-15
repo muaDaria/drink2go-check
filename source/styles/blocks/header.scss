@@ -78,13 +78,10 @@
 }
 
 /*.header__toggle  {
-  padding: 0;
   width: 16px;
-  height: 16px;
-  mask-image: url("../icons/toggle-opened.svg");
+  height: 12px;
+  mask-image: url("../../icons/toggle-opened.svg");
   background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
 }
 
 .main-header__toggle:hover,

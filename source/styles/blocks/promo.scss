@@ -1,8 +1,11 @@
 .promo__wrapper {
   @include wrapper__size;
+  padding: 0;
   background-color: $color-background-light;
   display: grid;
   text-align: center;
+  grid-template-columns: 20px 280px 20px;
+  grid-template-columns: repeat(5, auto);
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -10,7 +13,6 @@
     padding: 0 30px;
     grid-template-columns: 90px 619px;
     grid-template-rows: repeat(4, auto);
-
   }
 
   @media (min-width: $desktop-width) {
@@ -19,4 +21,54 @@
     grid-template-columns: 80px 367px auto 610px;
     grid-template-rows: repeat(3, auto);
   }
+}
+
+.slider__badge {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.slider__button {
+  padding: 0;
+  background-color: transparent;
+  grid-row: 1/-1;
+  width: 20px;
+}
+
+.slider__next {
+  grid-column: 1/2;
+}
+
+.slider__prev {
+  grid-column: 3/4;
+}
+
+.slider__title {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.slider__description {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
+.slider__price {
+  grid-row: 5/6;
+  grid-column: 2/3;
+  padding-bottom: 60px;
+}
+
+.slider__image-wrapper {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.slider__image {
+  display: block;
+}
+
+.slider__pagination {
+  display: none;
 }
