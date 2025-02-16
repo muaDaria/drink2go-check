@@ -1,5 +1,7 @@
 .main-footer__wrapper {
   @include wrapper__size;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -10,4 +12,42 @@
     width: $desktop-width;
     padding: 0 40px;
   }
+}
+
+.main-footer__contacts {
+  padding: 22px 0 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__logo {
+  text-decoration: none;
+  display: block;
+}
+
+.main-footer__logo-image {
+  width: 82px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.main-footer__logo-image:hover,
+.main-footer__logo-image:focus {
+  opacity: 0.8;
+}
+
+.main-footer__logo-image:active {
+  opacity: 0.6;
+}
+
+.main-footer__social {
+  width: 160px;
+}
+
+.main-footer__copyright {
+  padding: 20px 37px 30px 37px;
 }

@@ -1,0 +1,39 @@
+.copyright {
+  text-align: center;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 800%;
+    height: 1px;
+    background: $color-secondary;
+    top: 0;
+    right: 0;
+  }
+
+  &::after {
+    left: 0;
+  }
+}
+
+.copyright__text {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: $color-disabled;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $color-disabled;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.copyright__logo {
+  width: 12px;
+  height: 16px;
+}
