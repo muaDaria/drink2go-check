@@ -1,5 +1,27 @@
 .promo {
-  background-color: $color-background-light;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    background-color: $color-background-light;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      height: 640px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 100%;
+    }
+  }
 }
 
 .promo__wrapper-slider {
@@ -11,17 +33,15 @@
   grid-template-rows: repeat(5, auto);
 
   @media (min-width: $tablet-width) {
-    text-align: left;
     width: $tablet-width;
-    padding: 0 30px;
-    grid-template-columns: 90px 619px;
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 80px auto 80px;
+    grid-template-rows: auto auto auto auto 286px auto;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 0 40px;
-    grid-template-columns: 80px 367px auto 610px;
-    grid-template-rows: repeat(3, auto);
+    text-align: left;
+    grid-template-columns: 80px auto auto 80px;
+    grid-template-rows: 180px auto auto auto auto auto 84px;
   }
 }

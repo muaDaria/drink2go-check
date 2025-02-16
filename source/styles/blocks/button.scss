@@ -15,9 +15,14 @@
 
 .button:hover,
 .button:focus {
-  background-color: #5eaa2f;
+  background-color: $color-hover;
+  outline: none;
 }
 
 .button:active {
-  opacity: 0.3;
+  background-color: $color-active;
+}
+
+button:disabled {
+  background-color: $colo-disabled;
 }
