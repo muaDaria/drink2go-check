@@ -14,6 +14,7 @@
 
 .header__wrapper {
   @include wrapper__size;
+  padding-right: 0;
   display: flex;
   justify-content: space-between;
 
@@ -58,7 +59,11 @@
 }
 
 .header__toggle {
-  padding: 11px 22px 9px;
+  width: 60px;
+  background-image: url("../../icons/stack.svg#toggle-opened");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 12px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -66,6 +71,16 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.header--closed .header__toggle {
+  background-size: 16px 12px;
+  background-image: url("../../icons/stack.svg#toggle-opened");
+}
+
+.header--opened .header__toggle {
+  background-size: 12px 12px;
+  background-image: url("../../icons/stack.svg#toggle-closed");
 }
 
 .header__nav {
@@ -77,61 +92,18 @@
   background-color: $color-secondary;
 }
 
-/*.header__toggle  {
-  width: 16px;
-  height: 12px;
-  mask-image: url("../../icons/toggle-opened.svg");
-  background-repeat: no-repeat;
-}
-
-.main-header__toggle:hover,
-.main-header__toggle:focus {
-  opacity: 0.6;
-}
-
-.main-header__toggle:active {
-  opacity: 0.3;
-}
-
-//--closed
-.main-header--closed {
-  &::after {
-    box-shadow: none;
-  }
-}
-
-.main-header--closed .main-header__toggle {
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/toggle-opened.svg");
-}
-
-//--opened
-.main-header--opened .main-header__toggle {
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/toggle-closed.svg");
-}
-
-@media (max-width: @mobile-width-only) {
-  .main-header--closed .main-header__main-nav {
+@media (max-width: $mobile-width-only) {
+  .header--closed .header__nav-wrapper {
     display: none;
   }
 
-  .main-header--opened .main-header__main-nav {
+  .header--opened .header__nav-wrapper {
     position: absolute;
-    left: 0;
+    top: 60px;
     right: 0;
-    z-index: 2;
-    background-color: @light;
+    left: 0;
+    z-index: 10;
+    min-height: 57px;
+    background-color: $color-base-white;
   }
-
-  .main-header--nojs .main-header__main-nav {
-    display: block;
-    position: static;
-  }
-
-  .main-header--nojs .main-header__toggle {
-    display: none;
-  }
-}*/
+}
