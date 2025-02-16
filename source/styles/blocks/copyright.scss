@@ -17,6 +17,13 @@
   &::after {
     left: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .copyright__text {

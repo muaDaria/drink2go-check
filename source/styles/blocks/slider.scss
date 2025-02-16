@@ -32,14 +32,14 @@
 .slider__button:hover,
 .slider__button:focus {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url("../../icons/stack.svg#slider-next");
-  background-size: cover 11px 20px;
+  background-size: cover, 11px 20px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .slider__button:active {
   background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%), url("../../icons/stack.svg#slider-next");
-  background-size: cover 11px 20px;
+  background-size: cover, 11px 20px;
   background-position: center;
   background-repeat: no-repeat;
 }

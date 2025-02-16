@@ -1,6 +1,20 @@
+.footer__group {
+ padding-top: 20px;
+ padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+   padding-top: 0;
+   min-width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 317px;
+    padding-bottom: 0;
+  }
+}
+
 .footer__list {
   @include list__reset;
-  padding-bottom: 41px;
 }
 
 .footer__item {
@@ -35,6 +49,13 @@
   &::after {
     left: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .footer__link {
@@ -57,11 +78,7 @@
   color: $color-active;
 }
 
-.footer__contacts-address {
-  padding-bottom: 20px;
-}
-
-.footer__contacts-address .footer__title {
+.footer__group--address .footer__title {
   margin-bottom: 20px;
 }
 
