@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 40px 40px 30px 40px;
+    padding: 40px 40px 30px;
   }
 }
 
@@ -23,9 +23,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 9px;
-  }
-
-  @media (min-width: $desktop-width) {
     gap: 30px;
   }
 }
@@ -36,7 +33,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 38px 0 28px;
+    padding-top: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,15 +89,28 @@
   opacity: 0.6;
 }
 
+.mai-footer__logo-text:hover,
+.mai-footer__logo-text:focus {
+  color: $color-hover;
+}
+
+.mai-footer__logo-text:active {
+  color: $color-active;
+}
+
 .main-footer__social {
-  width: 160px;
+  max-width: 160px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+  }
 }
 
 .main-footer__copyright {
   padding: 20px 37px 0;
 
   @media (min-width: $tablet-width) {
-   padding-top: 8px;
+    padding-top: 8px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,47 +1,30 @@
-.promo {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: 0;
-    z-index: -1;
-    background-color: $color-background-light;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      height: 640px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      height: 100%;
-    }
-  }
-}
-
 .promo__wrapper-slider {
   @include wrapper__size;
   padding: 0;
-  display: grid;
+  position: relative;
   text-align: center;
-  grid-template-columns: 20px 280px 20px;
-  grid-template-rows: repeat(5, auto);
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    grid-template-columns: 80px auto 80px;
-    grid-template-rows: auto auto auto auto 286px auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 188px;
+      background-color: $color-base-white;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     text-align: left;
-    grid-template-columns: 80px auto auto 80px;
-    grid-template-rows: 180px auto auto auto auto auto 84px;
+
+    &::after {
+      display: none;
+    }
   }
 }

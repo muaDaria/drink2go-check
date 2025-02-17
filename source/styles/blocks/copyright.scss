@@ -40,7 +40,27 @@
   line-height: 16px;
 }
 
+.copyright__logo-text {
+  position: relative;
+}
+
 .copyright__logo {
   width: 12px;
   height: 16px;
+  position: relative;
+  top: 3px;
+}
+
+.copyright__link:hover,
+.copyright__link:focus,
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  color: $color-primary;
+  fill: $color-primary;
+}
+
+.copyright__link:active svg,
+.copyright__link:active {
+  fill: $color-active;
+  color: $color-active;
 }

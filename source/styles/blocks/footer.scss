@@ -1,10 +1,10 @@
 .footer__group {
- padding-top: 20px;
- padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-   padding-top: 0;
-   min-width: 223px;
+    padding-top: 0;
+    min-width: 223px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +66,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   text-transform: uppercase;
-  color: $color-base-black
+  color: $color-base-black;
 }
 
 .footer__link:hover,
@@ -95,7 +95,7 @@
   margin-top: 0;
   margin-bottom: 15px;
 
-   &::before {
+  &::before {
     display: block;
     position: absolute;
     content: "";
@@ -104,7 +104,7 @@
     height: 16px;
     left: 0;
     top: 0;
-   }
+  }
 }
 
 .footer__contacts-phone {
@@ -124,5 +124,5 @@
     height: 16px;
     left: 0;
     top: 0;
-   }
+  }
 }

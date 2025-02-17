@@ -9,7 +9,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header header--closed" data-test="header">
+    <header class="header" data-test="header">
       <div class="header__wrapper">
         <div class="header__container">
           <a class="header__logo logo" href="index.html">
@@ -21,8 +21,8 @@
             <p class="logo__text">Интернет-магазин кофейных напитков</p>
           </a>
         </div>
-        <nav class="header__nav nav">
-          <div class="header__nav-wrapper">
+        <nav class="header__nav nav nav--closed">
+          <div class="nav__nav-wrapper">
           <ul class="nav__list">
             <li class="nav__item nav__item--current">
               <a class="nav__link" href="#">Главная</a>
@@ -56,40 +56,88 @@
               </a>
             </li>
           </ul>
+          <button class="nav__toggle js-toggle-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </nav>
-        <button class="header__toggle js-toggle-button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </div>
     </header>
     <main>
       <section class="promo" data-test="hero">
           <div class="promo__wrapper-slider slider">
-            <p class="slider__badge badge">Новинка!</p>
-            <h1 class="slider__title title">Декаф Флэт Уайт</h1>
-            <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии <br> с натуральным фермерским молоком — то, что нужно <br>для расслабления после тяжёлого рабочего дня</p>
-            <div class="slider__price price">
-              <del class="price__old">295₽</del>
-              <b class="price__new">225₽</b>
-              <a class="price__button button" href="#">Заказать</a>
+            <div class="slider__wrapper">
+              <div class="slider__container">
+                <p class="slider__badge badge">Новинка!</p>
+                <h1 class="slider__title title">Декаф Флэт Уайт</h1>
+                <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии <br> с натуральным фермерским молоком — то, что нужно <br>для расслабления после тяжёлого рабочего дня</p>
+                <div class="slider__price price">
+                  <del class="price__old">295₽</del>
+                  <b class="price__new">225₽</b>
+                  <a class="price__button button" href="#">Заказать</a>
+                </div>
+                <div class="slider__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="600" height="600" srcset=" images/slide-desktop1@1x.webp 1x,  images/slide-desktop1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="476" height="476" srcset=" images/slide-tablet1@1x.webp 1x,  images/slide-tablet1@2x.webp 2x">
+                    <source type="image/webp" width="280" height="280" srcset="images/slide-mobile1@1x.webp 1x,  images/slide-mobile1@2x.webp 2x">
+                    <source media="(min-width: 1440px)" type="image/png" width="600" height="600" srcset="images/slide-desktop1@1x.png 1x, images/slide-desktop1@2x.png 2x">
+                    <source media="(min-width: 768px)" type="image/png" width="476" height="476" srcset="images/slide-tablet1@1x.png 1x, images/slide-tablet1@2x.png 2x">
+                    <img class="slider__image" src="images/slide-mobile1@1x.png" width="280" height="280" srcset="images/slide-mobile1@2x.png 2x" alt="Светло-бежевая банка кофе Декаф Флэт Уайт на фоне брызгов молока">
+                  </picture>
+                </div>
+              </div>
             </div>
-            <button class="slider__button slider__button-next button" type="button">
+            <div class="slider__wrapper">
+              <div class="slider__container">
+                <p class="slider__badge badge">Новинка!</p>
+                <h1 class="slider__title title">Лавандовый Латте</h1>
+                <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <div class="slider__price price">
+                  <del class="price__old">285₽</del>
+                  <b class="price__new">265₽</b>
+                  <a class="price__button button" href="#">Заказать</a>
+                </div>
+                <div class="slider__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="600" height="600" srcset=" images/slide-desktop2@1x.webp 1x,  images/slide-desktop2@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="476" height="476" srcset=" images/slide-tablet2@1x.webp 1x,  images/slide-tablet2@2x.webp 2x">
+                    <source type="image/webp" width="280" height="280" srcset="images/slide-mobile2@1x.webp 1x,  images/slide-mobile2@2x.webp 2x">
+                    <source media="(min-width: 1440px)" type="image/png" width="600" height="600" srcset="images/slide-desktop2@1x.png 1x, images/slide-desktop2@2x.png 2x">
+                    <source media="(min-width: 768px)" type="image/png" width="476" height="476" srcset="images/slide-tablet2@2x.png 1x, images/slide-tablet2@2x.png 2x">
+                    <img class="slider__image" src="images/slide-mobile2@1x.png" width="280" height="280" srcset="images/slide-mobile2@2x.png 2x" alt="Банка лавандового цвета с лавондовым латте на фоне веточек лаванды">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="slider__wrapper">
+              <div class="slider__container">
+                <p class="slider__badge badge">Новинка!</p>
+                <h1 class="slider__title title">Тройной Эспрессо</h1>
+                <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, <br> этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                <div class="slider__price price">
+                  <del class="price__old">395₽</del>
+                  <b class="price__new">375₽</b>
+                  <a class="price__button button" href="#">Заказать</a>
+                </div>
+                <div class="slider__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="600" height="600" srcset=" images/slide-desktop3@1x.webp 1x,  images/slide-desktop3@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="476" height="476" srcset=" images/slide-tablet3@1x.webp 1x,  images/slide-tablet3@2x.webp 2x">
+                    <source type="image/webp" width="280" height="280" srcset="images/slide-mobile3@1x.webp 1x,  images/slide-mobile3@2x.webp 2x">
+                    <source media="(min-width: 1440px)" type="image/png" width="600" height="600" srcset="images/slide-desktop3@1x.png 1x, images/slide-desktop3@2x.png 2x">
+                    <source media="(min-width: 768px)" type="image/png" width="476" height="476" srcset="images/slide-tablet3@3x.png 1x, images/slide-tablet3@2x.png 2x">
+                    <img class="slider__image" src="images/slide-mobile3@1x.png" width="280" height="280" srcset="images/slide-mobile3@2x.png 2x" alt="Банка темно-коричневого цвета с тройным эспрессо на фоне кофеных зерен">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <button class="slider__button slider__button-next button slider-button-prev" type="button">
               <span class="visually-hidden">Предыдущий товар</span>
             </button>
-            <button class="slider__button slider__button-prev button" type="button">
+            <button class="slider__button slider__button-prev button slider-button-next" type="button">
               <span class="visually-hidden">Следующий товар</span>
             </button>
-            <div class="slider__image-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" width="600" height="600" srcset=" images/promo-desktop@1x.webp 1x,  images/promo-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" width="476" height="476" srcset=" images/promo-tablet@1x.webp 1x,  images/promo-tablet@2x.webp 2x">
-                <source type="image/webp" width="280" height="280" srcset="images/promo-mobile@1x.webp 1x,  images/promo-mobile@2x.webp 2x">
-                <source media="(min-width: 1440px)" type="image/png" width="600" height="600" srcset="images/promo-desktop@1x.png 1x, images/promo-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" type="image/png" width="476" height="476" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x">
-                <img class="slider__image" src="images/promo-mobile@1x.png" width="280" height="280" srcset="img/promo/promo-mobile@2x.png 2x" alt="Светло-бежевая банка кофе Декаф Флэт Уайт">
-              </picture>
-            </div>
-            <ol class="slider__pagination">
+            <ol class="slider__pagination slider-pagination">
               <li class="slider__pagination-item">
                 <button class="slider__pagination-button slider__pagination-button--current button" type="button">
                   <span class="visually-hidden">1 товар</span>
@@ -446,7 +494,7 @@
                 <li class="social__item">
                   <a class="social__link social__link--pinterest" href="#">
                     <span class="visually-hidden">Мы на Пинтерест</span>
-                    <svg width="20" height="20" fill="#BDBDBD" role="img">
+                    <svg  class="social__icon" width="20" height="20" fill="#BDBDBD" role="img">
                       <use href="icons/stack.svg#pinterest"></use>
                     </svg>
                   </a>
@@ -454,7 +502,7 @@
                 <li class="social__item">
                   <a class="social__link social__link--ok" href="#">
                     <span class="visually-hidden">Мы в Одноклассниках</span>
-                    <svg width="20" height="20" fill="#BDBDBD" role="img">
+                    <svg class="social__icon" width="20" height="20" fill="#BDBDBD" role="img">
                       <use href="icons/stack.svg#ok"></use>
                     </svg>
                   </a>
@@ -509,7 +557,7 @@
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                 <span class="copyright__logo-text">HTML Academy</span>
                 <span class="visually-hidden">Логотип HTML Academy</span>
-                <svg class="copyright__logo" width="12" height="16" role="img">
+                <svg class="copyright__logo" width="12" height="16" fill="#BDBDBD" role="img">
                   <use href="icons/stack.svg#copyright-logo"></use>
               </svg>
             </a>

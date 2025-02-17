@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     margin-right: 60px;
@@ -17,7 +18,6 @@
 
 .nav__item {
   height: 60px;
-
   min-width: max-content;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 12px;
@@ -66,6 +66,8 @@
 .nav__user {
   @include list__reset;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
     gap: 20px;
@@ -156,4 +158,49 @@
 .nav__icon-account:active,
 .nav__icon-basket:active {
   fill: #7859cf;
+}
+
+.nav__toggle {
+  width: 60px;
+  background-image: url("../../icons/stack.svg#toggle-opened");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav--closed .nav__toggle {
+  background-size: 16px 12px;
+  background-image: url("../../icons/stack.svg#toggle-opened");
+}
+
+.nav--opened .nav__toggle {
+  background-size: 12px 12px;
+  background-image: url("../../icons/stack.svg#toggle-closed");
+}
+
+.nav__toggle:active {
+  background-color: $color-secondary;
+}
+
+@media (max-width: $mobile-width-only) {
+  .nav--closed .nav__nav-wrapper {
+    display: none;
+  }
+
+  .nav--opened .nav__nav-wrapper {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 57px;
+    background-color: $color-base-white;
+  }
 }
