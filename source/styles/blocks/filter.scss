@@ -1,0 +1,56 @@
+.filter__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.filter__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.filter__title {
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.filter__group--country .filter__title {
+  margin-bottom: 18px;
+}
+
+.filter__list {
+  @include list__reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter__group--milk .filter__title {
+  margin-bottom: 20px;
+}
+
+.filter__group--milk .filter__list {
+  @media (min-width: $tablet-width) {
+    width: 222px;
+  }
+}

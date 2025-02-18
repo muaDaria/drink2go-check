@@ -1,0 +1,90 @@
+.control__label {
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
+}
+
+.control__label--country {
+  padding-left: 40px;
+}
+
+.control__input {
+  margin: 0;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $color-primary;
+  cursor: pointer;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+.control__input[type="radio"] {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-primary;
+  top: 2px;
+  left: 2px;
+}
+
+.control__input:disabled {
+  border: 2px solid $color-range;
+}
+
+.control__input:disabled + .control__slider {
+  border-color: $color-range;
+  background-color: $color-range;
+}
+
+.control__label--disabled {
+  color: $color-disabled;
+}
+
+.control__slider {
+  margin: 0;
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  border: 2px solid $color-disabled;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 12px;
+  background-color: $color-disabled;
+  transition: 0.4s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $color-base-white;
+    top: 2px;
+    left: 2px;
+    transition: 0.4s;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__slider {
+  background-color: $color-primary;
+  border-color: $color-primary;
+}
+
+.control__input[type="checkbox"]:checked + .control__slider::before {
+  transform: translateX(20px);
+}

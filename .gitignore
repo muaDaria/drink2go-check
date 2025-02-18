@@ -1,5 +1,6 @@
 node_modules
 build
+backstop_data
 .idea
 .DS_Store
 raw/**/*.jpg

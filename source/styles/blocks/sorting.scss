@@ -1,0 +1,40 @@
+.sorting {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.sorting__label {
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.sorting__control {
+  color: $color-primary;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  width: 165px;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  padding-left: 12px;
+  background-image: url("../../icons/stack.svg#arrow");
+  background-position: right 8px center;
+  background-size: 10px 6px;
+  background-repeat: no-repeat;
+  appearance: none;
+}
